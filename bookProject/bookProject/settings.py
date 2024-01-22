@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'account',
+    'api',
     'rest_framework',
     'rest_framework.authtoken',
+     "pyuploadcare.dj",
+    "uploadcare",
 
 ]
 
@@ -136,3 +139,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+import os
+UPLOADCARE = {
+    "pub_key": '65dacfed96aaa23c8328',
+    "secret": 'bdb4a6e1c6641dd290c2',
+    "use_legacy_widget": True,
+}
